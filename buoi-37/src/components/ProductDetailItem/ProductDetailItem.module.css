@@ -1,0 +1,151 @@
+.container {
+    padding: 20px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.info {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.info h1 {
+    font-size: 30px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #f5a623;
+    margin-bottom: 18px;
+}
+
+.rating span {
+    color: #777;
+    font-size: 14px;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.desc {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+
+.section {
+    margin-bottom: 24px;
+}
+
+.section h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.quantity button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 6px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .25s;
+    color: #555;
+}
+
+.quantity button:hover {
+    background: #f3f3f3;
+}
+
+.quantity span {
+    min-width: 24px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cartBtn {
+    margin-top: 10px;
+    padding: 12px 24px;
+    background: #000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.cartBtn:hover {
+    background: #252424;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .gallery {
+        justify-content: center;
+    }
+
+    .image {
+        max-width: 300px;
+        height: 320px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .price {
+        font-size: 28px;
+    }
+
+    .cartBtn {
+        width: 100%;
+    }
+}
